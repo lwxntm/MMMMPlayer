@@ -5,3 +5,5 @@
 /out/build/x64-Debug
 /.vs
 /build
+/CMakeSettings.json
+/MMMMPlayer/CMakeSettings.json

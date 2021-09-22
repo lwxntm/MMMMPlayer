@@ -5,7 +5,6 @@ cmake_minimum_required (VERSION 3.8)
 
 #添加头文件依赖库（不需要编译，h文件）
 include_directories(../)
-#include_directories(../3rdparty/ffmpeg/include)
 
 link_directories(../3rdparty/ffmpeg/lib)
 
@@ -27,3 +26,4 @@ target_link_libraries(MMMMPlayer postproc)
 target_link_libraries(MMMMPlayer swresample)
 target_link_libraries(MMMMPlayer swscale)
 # TODO: 如有需要，请添加测试并安装目标。
+
