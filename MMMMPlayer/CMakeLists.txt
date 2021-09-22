@@ -5,7 +5,7 @@ cmake_minimum_required (VERSION 3.8)
 
 #添加头文件依赖库（不需要编译，h文件）
 include_directories(../)
-include_directories(../3rdparty/ffmpeg/include)
+#include_directories(../3rdparty/ffmpeg/include)
 
 link_directories(../3rdparty/ffmpeg/lib)
 
