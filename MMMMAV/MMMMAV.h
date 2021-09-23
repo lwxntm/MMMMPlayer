@@ -25,6 +25,9 @@ public:
 
 	int Read(MMMMAVPacket* packet);
 
+	const char* About();
+
+
 private:
         MMMMAVReaderPrivate* aVReaderPrivate = nullptr;
 };

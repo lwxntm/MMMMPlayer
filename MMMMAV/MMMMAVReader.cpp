@@ -11,6 +11,7 @@ MMMMAVReader::~MMMMAVReader()
 {
   if (aVReaderPrivate->aVFormatCtx != nullptr)
 	{
+	
     avformat_free_context(aVReaderPrivate->aVFormatCtx);
     aVReaderPrivate->aVFormatCtx = nullptr;
 	}
@@ -45,4 +46,11 @@ int MMMMAVReader::Read(MMMMAVPacket* packet)
 {
   int ret = av_read_frame(aVReaderPrivate->aVFormatCtx, packet->aVPacketPrivate->pkt);
 	return ret;
+}
+
+
+const char* MMMMAVReader::About()
+{
+	auto ret = avformat_configuration();
+  return ret;
 }
